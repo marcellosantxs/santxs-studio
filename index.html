@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santxs Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>SANTXS</h1>
+            <p>Frases que fazem pensar.</p>
+        </header>
+
+        <div class="categoria-box">
+            <label for="categoria">Categoria:</label>
+
+            <select id="categoria">
+                <option value="todas">Todas</option>
+                <option value="fe">Fé</option>
+                <option value="motivacao">Motivação</option>
+                <option value="reflexao">Reflexão</option>
+                <option value="superacao">Superação</option>
+                <option value="amor">Amor</option>
+                <option value="melancolia">Melancolia</option>
+            </select>
+        </div>
+
+        <div class="card">
+
+            <p id="frase">
+                Clique em "Nova Frase"
+            </p>
+
+        </div>
+
+        <div class="acoes">
+
+            <button id="novaFrase">
+                🎲 Nova Frase
+            </button>
+
+            <button id="copiar">
+                📋 Copiar
+            </button>
+
+            <button id="favoritar">
+                ❤️ Favoritar
+            </button>
+
+            <button id="gerarImagem">
+                🖼️ Gerar Imagem
+            </button>
+
+        </div>
+
+        <div class="historico">
+
+            <h2>Histórico</h2>
+
+            <ul id="listaHistorico">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <canvas id="canvasImagem" style="display:none;"></canvas>
+
+    <script src="data/frases.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
